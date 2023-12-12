@@ -1,0 +1,31 @@
+POST http://localhost:3333/hamburguer
+Content-Type: application/json
+
+{
+    "nome": "Hambúrguer Duplo",
+    "tipo_pao": "Pão de Leite",
+    "preco": "R$ 20,00"
+}
+
+###
+
+GET http://localhost:3333/hamburguer
+
+###
+
+GET http://localhost:3333/hamburguer?search=Duplo
+
+###
+
+PUT http://localhost:3333/hamburgueres/7dbde672-cb5a-42d1-a083-6b41b8a02747
+Content-Type: application/json
+
+{
+    "nome": "Hambúrguer Vegetariano",
+    "tipo-pao": "Pão 5 Grãos",
+    "preco": "R$ 15,00"
+}
+
+###
+
+DELETE http://localhost:3333/hamburgueres/2ba4342b-38b8-4ff1-986c-f5e922d452f8
